@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Vine Hill Ranch Cabernet",
+    "year": 2012,
+    "size": "750ml",
+    "quantity": 12,
+    "price": 165,
+    "image": "images/vhr.jpg",
+    "cabernet": true
+  },
+  {
+    "name": "Dakota Shy Cabernet",
+    "year": 2014,
+    "size": "750ml",
+    "quantity": 8,
+    "price": 75,
+    "image": "images/dakota-shy.jpg",
+    "cabernet": true
+  },
+  {
+    "name": "Dana Estate Helms Vineyard",
+    "year": 2009,
+    "size": "750ml",
+    "quantity": 4,
+    "price": 225,
+    "image": "images/dana.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Far Niente",
+    "year": 1999,
+    "size": "750ml",
+    "quantity": 26,
+    "price": 75,
+    "image": "images/far-niente.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Hundred Acre Kayli Morgan Vineyard",
+    "year": 2008,
+    "size": "750ml",
+    "quantity": 11,
+    "price": 275,
+    "image": "images/hundred-acre.jpg",
+    "cabernet": true
+  },
+  {
+    "name": "Jordan Red Wine",
+    "year": 1996,
+    "size": "750ml",
+    "quantity": 32,
+    "price": 55,
+    "image": "images/jordan.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Chateau Mouton Rothschild",
+    "year": 1988,
+    "size": "750ml",
+    "quantity": 11,
+    "price": 325,
+    "image": "images/mouton.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "The Napa Valley Reserve Red Wine",
+    "year": 2015,
+    "size": "750ml",
+    "quantity": 46,
+    "price": 180,
+    "image": "images/nvr.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Ovid Hexameter Cabernet",
+    "year": 2009,
+    "size": "750ml",
+    "quantity": 6,
+    "price": 200,
+    "image": "images/ovid.jpg",
+    "cabernet": true
+  },
+  {
+    "name": "Sassicaia",
+    "year": 1979,
+    "size": "750ml",
+    "quantity": 12,
+    "price": 220,
+    "image": "images/sassicaia.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Scarecrow Red Wine",
+    "year": 2007,
+    "size": "750ml",
+    "quantity": 3,
+    "price": 520,
+    "image": "images/scarecrow.jpg",
+    "cabernet": false
+  },
+  {
+    "name": "Schrader T6",
+    "year": 2009,
+    "size": "750ml",
+    "quantity": 8,
+    "price": 225,
+    "image": "images/schrader.jpg",
+    "cabernet": false
+  }
+]
