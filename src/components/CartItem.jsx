@@ -28,7 +28,7 @@ export default function CartItem(props) {
       <p className="size-text">{props.item.size}</p>
       <p className="price-text">${props.item.price}</p>
       <img
-        src="trash.svg"
+        src="icons/trash.svg"
         className="cart"
         alt="Delete item"
         onClick={handleClick}

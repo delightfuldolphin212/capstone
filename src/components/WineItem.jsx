@@ -22,7 +22,7 @@ export default function WineItem(props) {
       <p className="size-text">{props.item.size}</p>
       <p className="price-text">${props.item.price}</p>
       <img
-        src="cart.svg"
+        src="icons/cart.svg"
         className="cart"
         alt="Add to cart"
         onClick={handleClick}
