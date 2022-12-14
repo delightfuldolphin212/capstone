@@ -80,7 +80,7 @@ export default function Contact() {
         <h1><span>Contact us below</span></h1>
         {message && <div>{message.text}</div>}
         <form onSubmit={submitForm}>
-          <div>
+          <div className="contact-box">
             <label htmlFor="name">Name</label>
             <input
              onChange={updateFormControl}
@@ -88,7 +88,7 @@ export default function Contact() {
              id="name" 
              value={formState.name}/>
           </div>
-          <div>
+          <div className="contact-box">
             <label htmlFor="email">Email</label>
             <input
              onChange={updateFormControl}
@@ -96,7 +96,7 @@ export default function Contact() {
              id="email" 
              value={formState.email}/>
           </div>
-          <div>
+          <div className="contact-box">
             <label htmlFor="message">Message</label>
             <textarea id="message" 
             onChange={updateFormControl}
@@ -104,14 +104,16 @@ export default function Contact() {
             ></textarea>
           </div>
 
-          <ReCAPTCHA
+          <ReCAPTCHA 
             ref={recaptchaRef}
             sitekey={recaptchaKey}
             onChange={updateRecaptchaToken}
           />
+          <div className="contact-box">
           <button disabled={submitting}>
           {submitting ? 'Submitting...' : 'Submit'}
           </button>
+          </div>
         </form>
       </div>
     </div>

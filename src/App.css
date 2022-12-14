@@ -145,8 +145,14 @@
 }
 .contact-container {
   width: 100%;
+  align-content: center;
 }
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-box {
+  padding: 5%;
 }
