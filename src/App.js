@@ -11,6 +11,7 @@ import "./App.css";
 import wineData from "./assets/wine-data.json";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import axios, {isCancel, AxiosError} from 'axios';
 
 function App() {
   let [cartItems, setCartItems] = useState([]);
