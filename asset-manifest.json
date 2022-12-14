@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.23fdbce5.css",
-    "main.js": "/capstone/static/js/main.d8386ecb.js",
+    "main.css": "/capstone/static/css/main.04c00e2b.css",
+    "main.js": "/capstone/static/js/main.83695041.js",
     "static/media/logo.png": "/capstone/static/media/logo.09b2564bd80119fda331.png",
     "static/media/petrusBottle.jpeg": "/capstone/static/media/petrusBottle.e96f09a15045ecf56e8a.jpeg",
     "static/media/lafiteBottle.jpeg": "/capstone/static/media/lafiteBottle.a4da7d133cd707183168.jpeg",
     "static/media/my-cart.png": "/capstone/static/media/my-cart.456bff6af2e8d9f8503c.png",
     "index.html": "/capstone/index.html",
-    "main.23fdbce5.css.map": "/capstone/static/css/main.23fdbce5.css.map",
-    "main.d8386ecb.js.map": "/capstone/static/js/main.d8386ecb.js.map"
+    "main.04c00e2b.css.map": "/capstone/static/css/main.04c00e2b.css.map",
+    "main.83695041.js.map": "/capstone/static/js/main.83695041.js.map"
   },
   "entrypoints": [
-    "static/css/main.23fdbce5.css",
-    "static/js/main.d8386ecb.js"
+    "static/css/main.04c00e2b.css",
+    "static/js/main.83695041.js"
   ]
 }
