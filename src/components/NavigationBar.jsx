@@ -1,32 +1,33 @@
 import { AwesomeButton } from "react-awesome-button";
+import { Link } from "react-router-dom";
 import "react-awesome-button/dist/styles.css";
 
 export default function NavigationBar() {
   return (
     <div>
-      <AwesomeButton type="danger" href="/">
-        Home
-      </AwesomeButton>
+      <Link to="/">
+        <AwesomeButton type="danger">Home</AwesomeButton>
+      </Link>
       &#8195;
-      <AwesomeButton type="danger" href="/about">
-        About
-      </AwesomeButton>
+      <Link to="/about">
+        <AwesomeButton type="danger">About</AwesomeButton>
+      </Link>
       &#8195;
-      <AwesomeButton type="danger" href="/selling">
-        Selling
-      </AwesomeButton>
+      <Link to="/selling">
+        <AwesomeButton type="danger">Selling</AwesomeButton>
+      </Link>
       &#8195;
-      <AwesomeButton type="danger" href="/contact">
-        Contact
-      </AwesomeButton>
+      <Link to="/contact">
+        <AwesomeButton type="danger">Contact</AwesomeButton>
+      </Link>
       &#8195;
-      <AwesomeButton type="danger" href="/login">
-        Login
-      </AwesomeButton>
+      <Link to="/login">
+        <AwesomeButton type="danger">Login</AwesomeButton>
+      </Link>
       &#8195;
-      <AwesomeButton type="danger" href="/cart">
-        Cart
-      </AwesomeButton>
+      <Link to="/cart">
+        <AwesomeButton type="danger">Cart</AwesomeButton>
+      </Link>
     </div>
   );
 }

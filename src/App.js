@@ -4,14 +4,11 @@ import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Selling from "./pages/Selling";
-import WineItem from "./components/WineItem";
-import CartItem from "./components/CartItem";
 import Header from "./components/Header";
 import "./App.css";
 import wineData from "./assets/wine-data.json";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import axios, {isCancel, AxiosError} from 'axios';
+import { Route, Switch } from "react-router-dom";
 
 function App() {
   let [cartItems, setCartItems] = useState([]);
@@ -21,11 +18,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
+
+      <Switch>
         <Route
-          path="/"
-          element={
-            <HomePg
+          exact
+          path="/about"
+          render={(props) => (
+            <About
+              {...props}
               filteredItems={filteredItems}
               setFilteredItems={setFilteredItems}
               cartItems={cartItems}
@@ -33,14 +33,84 @@ function App() {
               price={price}
               setPrice={setPrice}
             />
-          }
+          )}
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/selling" element={<Selling />} />
-      </Routes>
+        <Route
+          exact
+          path="/cart"
+          render={(props) => (
+            <Cart
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/contact"
+          render={(props) => (
+            <Contact
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/selling"
+          render={(props) => (
+            <Selling
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/login"
+          render={(props) => (
+            <Login
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <HomePg
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+      </Switch>
     </div>
   );
 }
