@@ -48,7 +48,7 @@ export default function Contact() {
       const result = await axios.post(formSparkUrl, payload);
       console.log(result);
       setMessage({
-        class: 'green',
+        class: 'background-color: green;',
         text: 'Thanks, someone will be in touch'
       });
       setFormState(intialFormState);

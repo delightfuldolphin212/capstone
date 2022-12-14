@@ -144,15 +144,45 @@
   padding-bottom: 2%;
 }
 .contact-container {
+  display: flex;
   width: 100%;
   align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .contact-form {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 3px 3px 3px 3px grey;
+  border-radius: 20px;
+  margin-top: 5%;
 }
 .contact-box {
   padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-box button {
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: none;
+}
+
+.contact-box button:hover {
+  background-color: darkblue;
+  animation-duration: 200ms;
+  cursor: pointer;
+}
+.contact-box label {
+  align-content: flex-start;
+  float: left;
+}
+.contact-box input {
+  padding: 2%;
 }
