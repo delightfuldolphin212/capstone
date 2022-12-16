@@ -28,7 +28,6 @@ export default function Cart(props) {
             <th>Size</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -40,22 +39,13 @@ export default function Cart(props) {
               <td>{item.size}</td>
               <td>${item.price}</td>
               <td>{item.quantity}</td>
-              <td>
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  onClick={() => handleClick(index)}
-                >
-                  Delete
-                </button>
-              </td>
             </tr>
           ))}
         </tbody>
       </Table>
-      <Link to="/checkout">
-        <AwesomeButton type="primary">Checkout</AwesomeButton>
-      </Link>
+      <button type="button" class="btn btn-primary">
+        Checkout
+      </button>
     </div>
   );
 }

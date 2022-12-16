@@ -30,6 +30,8 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 80%;
+  padding-top: 3%;
+  padding-left: 3%;
 }
 
 .cart-container {
@@ -190,4 +192,16 @@
 }
 .contact-box input {
   padding: 2%;
+}
+
+.tile {
+  text-align: left;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }

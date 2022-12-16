@@ -1,6 +1,6 @@
 [
   {
-    "name": "Vine Hill Ranch Cabernet",
+    "name": "Vine Hill Ranch Cabernet Sauvignon",
     "year": 2012,
     "size": "750ml",
     "quantity": 12,
@@ -9,7 +9,7 @@
     "cabernet": true
   },
   {
-    "name": "Dakota Shy Cabernet",
+    "name": "Dakota Shy Cabernet Sauvignon",
     "year": 2014,
     "size": "750ml",
     "quantity": 8,
@@ -27,7 +27,7 @@
     "cabernet": false
   },
   {
-    "name": "Far Niente",
+    "name": "Far Niente Red Wine Blend",
     "year": 1999,
     "size": "750ml",
     "quantity": 26,
@@ -45,7 +45,7 @@
     "cabernet": true
   },
   {
-    "name": "Jordan Red Wine",
+    "name": "Jordan Napa Valley Red Wine",
     "year": 1996,
     "size": "750ml",
     "quantity": 32,
@@ -72,7 +72,7 @@
     "cabernet": false
   },
   {
-    "name": "Ovid Hexameter Cabernet",
+    "name": "Ovid Hexameter Cabernet Sauvignon",
     "year": 2009,
     "size": "750ml",
     "quantity": 6,
@@ -81,7 +81,7 @@
     "cabernet": true
   },
   {
-    "name": "Sassicaia",
+    "name": "Sassicaia Tenuto San Guido",
     "year": 1979,
     "size": "750ml",
     "quantity": 12,
@@ -90,7 +90,7 @@
     "cabernet": false
   },
   {
-    "name": "Scarecrow Red Wine",
+    "name": "Scarecrow Napa Valley Red Wine",
     "year": 2007,
     "size": "750ml",
     "quantity": 3,
@@ -99,7 +99,7 @@
     "cabernet": false
   },
   {
-    "name": "Schrader T6",
+    "name": "Schrader Cellars T6 Blend",
     "year": 2009,
     "size": "750ml",
     "quantity": 8,

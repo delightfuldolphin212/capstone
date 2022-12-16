@@ -26,7 +26,7 @@ export default function CartItem(props) {
         {props.item.year} {props.item.name}
       </p>
       <p className="size-text">{props.item.size}</p>
-      <p className="price-text">${props.item.price}</p>
+      <p className="price-text">{props.item.price}</p>
       <img
         src="icons/trash.svg"
         className="cart"
