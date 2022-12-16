@@ -3,7 +3,11 @@ import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+
 import Checkout from "./pages/Checkout";
+
+import Registration from "./pages/Registration"
+
 import Selling from "./pages/Selling";
 import Header from "./components/Header";
 import "./App.css";
@@ -19,7 +23,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Switch>
         <Route
           exact
@@ -98,9 +101,15 @@ function App() {
         />
         <Route
           exact
+<<<<<<< HEAD
           path="/checkout"
           render={(props) => (
             <Checkout
+=======
+          path="/Registration"
+          render={(props) => (
+            <Registration
+>>>>>>> 7b49ddfed19d2d451aa2f008e96e1749bbdb322f
               {...props}
               filteredItems={filteredItems}
               setFilteredItems={setFilteredItems}
