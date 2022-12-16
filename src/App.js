@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Registration from "./pages/Registration"
 import Selling from "./pages/Selling";
 import Header from "./components/Header";
 import "./App.css";
@@ -18,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <Switch>
         <Route
           exact
@@ -85,6 +85,21 @@ function App() {
           path="/login"
           render={(props) => (
             <Login
+              {...props}
+              filteredItems={filteredItems}
+              setFilteredItems={setFilteredItems}
+              cartItems={cartItems}
+              setCartItems={setCartItems}
+              price={price}
+              setPrice={setPrice}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/Registration"
+          render={(props) => (
+            <Registration
               {...props}
               filteredItems={filteredItems}
               setFilteredItems={setFilteredItems}

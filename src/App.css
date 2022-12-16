@@ -191,3 +191,25 @@
 .contact-box input {
   padding: 2%;
 }
+/* .instructions {
+  color: blue;
+  background-color: black;
+  margin: 2%;
+  border-radius: 5%;
+  
+} */
+.offscreen {
+  display: none;
+}
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+.message-box{
+  background-color: black;
+  color: white;
+  margin: 2%;
+  border-radius: 3%;
+}

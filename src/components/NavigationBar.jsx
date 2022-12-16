@@ -28,6 +28,10 @@ export default function NavigationBar() {
       <Link to="/cart">
         <AwesomeButton type="danger">Cart</AwesomeButton>
       </Link>
+      &#8195;
+      <Link to="/Registration">
+        <AwesomeButton type="danger">Register</AwesomeButton>
+      </Link>
     </div>
   );
 }
