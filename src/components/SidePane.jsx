@@ -50,7 +50,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type="primary"
         before={<FilterIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={handleReset}
       >
         Reset Filters
@@ -59,7 +59,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type={priceFilter}
         before={<FilterIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={priceFilter === "secondary" ? handleUnder100 : undefined}
       >
         Under $100
@@ -69,7 +69,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type={priceFilter}
         before={<FilterIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={priceFilter === "secondary" ? handleOver100 : undefined}
       >
         $100 +
@@ -78,7 +78,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type={typeFilter}
         before={<FilterIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={typeFilter === "secondary" ? handleCabernets : undefined}
       >
         Cabernets
@@ -88,7 +88,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type={typeFilter}
         before={<FilterIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={typeFilter === "secondary" ? handleReds : undefined}
       >
         Red Blends
@@ -97,7 +97,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type="secondary"
         before={<SortDescIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={handleSortPrice}
       >
         Sort by Price
@@ -107,7 +107,7 @@ export default function SidePane(props) {
       <AwesomeButton
         type="secondary"
         before={<SortDescIcon />}
-        class="nav-button"
+        className="nav-button"
         onPress={handleSortYear}
       >
         Sort by Year

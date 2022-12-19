@@ -10,13 +10,11 @@ export default function WineItem(props) {
     props.item.quantity = props.item.quantity - 1;
     for (let i = 0; i < props.cartItems.length; i++) {
       if (props.cartItems[i].name === props.item.name) {
-        console.log("inside if ");
         props.cartItems[i].quantity += 1;
         match = true;
       }
     }
     if (!match) {
-      console.log("outside if ");
       const newList = props.cartItems.concat(
         JSON.parse(JSON.stringify(props.item))
       );
@@ -44,7 +42,7 @@ export default function WineItem(props) {
         <Card.Body>
           <Button
             variant="primary"
-            disabled={props.item.quantity == 0 ? true : undefined}
+            disabled={props.item.quantity === 0 ? true : undefined}
             onClick={handleClick}
           >
             Add to cart

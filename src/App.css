@@ -37,6 +37,7 @@
 .cart-container {
   display: inline-block;
   width: 80%;
+  padding-top: 2%;
 }
 
 .gallery-item {
@@ -100,7 +101,8 @@
 }
 
 .total-price {
-  width: 80%;
+  text-align: right;
+  padding-right: 5%;
 }
 
 .img-small {
@@ -221,10 +223,28 @@
 .invalid {
   color: red;
 }
-.message-box{
+.message-box {
   background-color: black;
   color: white;
   margin: 2%;
   border-radius: 3%;
 }
 
+.form-container {
+  width: 40%;
+  padding-top: 5%;
+  display: inline-block;
+}
+
+.footer {
+  padding-top: 10%;
+}
+
+.footer-button {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.navbar {
+  padding-bottom: 20px;
+}

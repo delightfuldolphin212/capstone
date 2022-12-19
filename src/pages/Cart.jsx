@@ -1,6 +1,4 @@
-import CartItem from "../components/CartItem";
 import Table from "react-bootstrap/Table";
-import Button from "react-bootstrap/Button";
 import { AwesomeButton } from "react-awesome-button";
 import { Link } from "react-router-dom";
 import "react-awesome-button/dist/styles.css";
@@ -20,7 +18,6 @@ export default function Cart(props) {
 
   return (
     <div className="cart-container">
-      <h1 className="total-price">Total Price: ${props.price}</h1>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -43,7 +40,7 @@ export default function Cart(props) {
               <td>
                 <button
                   type="button"
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   onClick={() => handleClick(index)}
                 >
                   Delete
@@ -53,6 +50,7 @@ export default function Cart(props) {
           ))}
         </tbody>
       </Table>
+      <h5 className="total-price">Subtotal: ${props.price.toFixed(2)}</h5>
       <Link to="/checkout">
         <AwesomeButton type="primary">Checkout</AwesomeButton>
       </Link>

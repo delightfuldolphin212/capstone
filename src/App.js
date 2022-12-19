@@ -7,6 +7,7 @@ import Checkout from "./pages/Checkout";
 import Registration from "./pages/Registration";
 import Selling from "./pages/Selling";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./App.css";
 import wineData from "./assets/wine-data.json";
 import { useState } from "react";
@@ -16,6 +17,7 @@ function App() {
   let [cartItems, setCartItems] = useState([]);
   let [price, setPrice] = useState(0);
   let [filteredItems, setFilteredItems] = useState(wineData);
+  const [modalShow, setModalShow] = useState(false);
 
   return (
     <div className="App">
@@ -107,6 +109,8 @@ function App() {
               setCartItems={setCartItems}
               price={price}
               setPrice={setPrice}
+              modalShow={modalShow}
+              setModalShow={setModalShow}
             />
           )}
         />
@@ -137,10 +141,13 @@ function App() {
               setCartItems={setCartItems}
               price={price}
               setPrice={setPrice}
+              modalShow={modalShow}
+              setModalShow={setModalShow}
             />
           )}
         />
       </Switch>
+      <Footer />
     </div>
   );
 }
