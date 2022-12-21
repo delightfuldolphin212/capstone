@@ -48,14 +48,16 @@ export default function SidePane(props) {
     <div>
       <h1>Filters:</h1>
       <AwesomeButton
-        type="primary"
+        type="danger"
         before={<FilterIcon />}
         className="nav-button"
         onPress={handleReset}
       >
         Reset Filters
       </AwesomeButton>
-      <h3>---</h3>
+      <br />
+      <br />
+      <br />
       <AwesomeButton
         type={priceFilter}
         before={<FilterIcon />}
@@ -74,7 +76,9 @@ export default function SidePane(props) {
       >
         $100 +
       </AwesomeButton>
-      <h3>---</h3>
+      <br />
+      <br />
+      <br />
       <AwesomeButton
         type={typeFilter}
         before={<FilterIcon />}
@@ -93,7 +97,11 @@ export default function SidePane(props) {
       >
         Red Blends
       </AwesomeButton>
+      <br />
+      <br />
+      <br />
       <h1>Sorting:</h1>
+
       <AwesomeButton
         type="secondary"
         before={<SortDescIcon />}

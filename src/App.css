@@ -31,7 +31,7 @@
   flex-direction: row;
   width: 80%;
   padding-top: 3%;
-  padding-left: 3%;
+  justify-content: center;
 }
 
 .cart-container {
@@ -106,20 +106,26 @@
 }
 
 .img-small {
-  width: 70%;
+  width: 100%;
+  object-fit: cover;
 }
 .about-container1 {
   display: flex;
-  width: 35%;
+  width: 40%;
   padding: 5%;
   padding-right: 0%;
   padding-left: 0%;
+  padding-top: 5%;
+  padding-bottom: 0%;
 }
+
 .about-container2 {
   display: flex;
   width: 45%;
   flex-direction: column;
   padding: 5%;
+  text-align: left;
+  padding-bottom: 0%;
 }
 .about-container2 p {
   font-size: 18px;
@@ -174,20 +180,7 @@
   display: flex;
   flex-direction: column;
 }
-.contact-box button {
-  background-color: blue;
-  color: white;
-  width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border: none;
-}
 
-.contact-box button:hover {
-  background-color: darkblue;
-  animation-duration: 200ms;
-  cursor: pointer;
-}
 .contact-box label {
   align-content: flex-start;
   float: left;
@@ -247,4 +240,42 @@
 
 .navbar {
   padding-bottom: 20px;
+}
+
+.review-text {
+  color: white;
+}
+
+.aws-btn {
+  --button-default-height: 44px;
+  --button-default-font-size: 14px;
+  --button-default-border-radius: 4px;
+  --button-horizontal-padding: 16px;
+  --button-raise-level: 4px;
+  --button-hover-pressure: 1;
+  --transform-speed: 0.15s;
+  --button-primary-color: #1f8fe5;
+  --button-primary-color-dark: #1360a4;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #187bd1;
+  --button-primary-color-active: #166dba;
+  --button-primary-border: none;
+  --button-secondary-color: #f9f1f1;
+  --button-secondary-color-dark: #861f1f;
+  --button-secondary-color-light: #c42e2e;
+  --button-secondary-color-hover: #f0e0e0;
+  --button-secondary-color-active: #e9cece;
+  --button-secondary-border: 2px solid #c42e2e;
+  --button-anchor-color: #7a2222;
+  --button-anchor-color-dark: #450707;
+  --button-anchor-color-light: #ffffff;
+  --button-anchor-color-hover: #7d0d0d;
+  --button-anchor-color-active: #730c0c;
+  --button-anchor-border: none;
+  --button-danger-color: #c42e2e;
+  --button-danger-color-dark: #861f1f;
+  --button-danger-color-light: #ffffff;
+  --button-danger-color-hover: #bc2c2c;
+  --button-danger-color-active: #af2929;
+  --button-danger-border: none;
 }

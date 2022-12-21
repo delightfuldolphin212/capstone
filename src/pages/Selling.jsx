@@ -3,7 +3,7 @@ export default function Selling() {
     <div className="gallery-container">
       <div className="about-container1">
         <img
-          src={require("../assets/lafiteBottle.jpeg")}
+          src={require("../assets/lafite.jpg")}
           alt="Wine Bottle"
           className="img-small"
         />
@@ -44,12 +44,6 @@ export default function Selling() {
           whether or not you utilize our pre-formatted spreadsheet. You will
           find it helpful in evaluating the condition of your wine.
         </p>
-      </div>
-      <div className="review-container">
-        <div className="review-box">
-          <h3>Leave a Review Below !</h3>
-          <button>Review us on Yelp</button>
-        </div>
       </div>
     </div>
   );

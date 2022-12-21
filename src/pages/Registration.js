@@ -5,6 +5,8 @@ import {
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -26,7 +28,7 @@ const Registration = () => {
   const [matchFocus, setMatchFocus] = useState(false);
 
   const [errMsg, setErrMsg] = useState("");
-  const [success, setSuccess] = useState(false);
+  //const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     userRef.current.focus();
@@ -61,7 +63,7 @@ const Registration = () => {
       return;
     }
     console.log(user, pwd);
-    setSuccess(true);
+    //setSuccess(true);
   };
 
   return (
@@ -199,18 +201,21 @@ const Registration = () => {
               </div>
             </div>
             <div className="contact-box">
-              <button
+              <Button
+                variant="danger"
                 disabled={!validName || !validPwd || !validMatch ? true : false}
               >
                 Sign Up
-              </button>
+              </Button>
             </div>
           </form>
+          <br />
           <p>
             Already registered ? <br />
             <span>
-              {/* put link to sing up here */}
-              <a href="#">Sign In</a>
+              <Link to="/login">
+                <Button variant="outline-danger">Sign In</Button>
+              </Link>
             </span>
           </p>
         </section>

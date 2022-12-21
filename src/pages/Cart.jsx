@@ -52,7 +52,7 @@ export default function Cart(props) {
       </Table>
       <h5 className="total-price">Subtotal: ${props.price.toFixed(2)}</h5>
       <Link to="/checkout">
-        <AwesomeButton type="primary">Checkout</AwesomeButton>
+        <AwesomeButton type="secondary">Checkout</AwesomeButton>
       </Link>
     </div>
   );

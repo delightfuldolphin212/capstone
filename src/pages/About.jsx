@@ -3,7 +3,7 @@ export default function About() {
     <div className="gallery-container">
       <div className="about-container1">
         <img
-          src={require("../assets/petrusBottle.jpeg")}
+          src={require("../assets/petrus.jpeg")}
           alt="Wine Bottle"
           className="img-small"
         />
@@ -44,12 +44,6 @@ export default function About() {
           With the continued support of our customers, we will be here a long
           time living up to our motto:
         </p>
-      </div>
-      <div className="review-container">
-        <div className="review-box">
-          <h3>Leave a Review Below !</h3>
-          <button>Review us on Yelp</button>
-        </div>
       </div>
     </div>
   );

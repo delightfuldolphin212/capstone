@@ -109,7 +109,7 @@ export default function Checkout(props) {
           />
         </Form.Group>
         <Link to="/">
-          <Button variant="primary" onClick={handleClick} type="submit">
+          <Button variant="danger" onClick={handleClick} type="submit">
             Submit
           </Button>
         </Link>

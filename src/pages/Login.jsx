@@ -1,7 +1,9 @@
 import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
 import axios from "../api/axios";
-import { stringify } from "querystring";
+//import { stringify } from "querystring";
+import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 const LOGIN_URL = "/auth";
 
 const Login = () => {
@@ -62,7 +64,9 @@ const Login = () => {
               <h1>You are logged in !</h1>
               <br />
               <p>
-                <a href="#">Go To Home</a>
+                <Link to="/">
+                  <Button variant="outline-danger">Go to home</Button>
+                </Link>
               </p>
             </section>
           ) : (
@@ -99,14 +103,16 @@ const Login = () => {
                   />
                 </div>
                 <div className="contact-box">
-                  <button>Sign In</button>
+                  <Button variant="danger">Sign In</Button>
                 </div>
               </form>
               <p>
+                <br />
                 Need an Account ?<br />
                 <span>
-                  {/*put router link here*/}
-                  <a href="#registration">Sign Up</a>
+                  <Link to="/registration">
+                    <Button variant="outline-danger">Sign Up</Button>
+                  </Link>
                 </span>
               </p>
             </section>

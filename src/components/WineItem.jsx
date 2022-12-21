@@ -41,7 +41,7 @@ export default function WineItem(props) {
         </ListGroup>
         <Card.Body>
           <Button
-            variant="primary"
+            variant="danger"
             disabled={props.item.quantity === 0 ? true : undefined}
             onClick={handleClick}
           >
