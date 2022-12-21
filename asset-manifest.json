@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.4ba36627.css",
-    "main.js": "/capstone/static/js/main.a58c4b2b.js",
+    "main.css": "/capstone/static/css/main.32a63069.css",
+    "main.js": "/capstone/static/js/main.902d36a0.js",
+    "static/media/lafite.jpg": "/capstone/static/media/lafite.0e558e744a5c32dc661d.jpg",
+    "static/media/petrus.jpeg": "/capstone/static/media/petrus.6184aa2bf1b6cefcc98e.jpeg",
     "static/media/logo.png": "/capstone/static/media/logo.09b2564bd80119fda331.png",
-    "static/media/petrusBottle.jpeg": "/capstone/static/media/petrusBottle.e96f09a15045ecf56e8a.jpeg",
-    "static/media/lafiteBottle.jpeg": "/capstone/static/media/lafiteBottle.a4da7d133cd707183168.jpeg",
     "index.html": "/capstone/index.html",
-    "main.4ba36627.css.map": "/capstone/static/css/main.4ba36627.css.map",
-    "main.a58c4b2b.js.map": "/capstone/static/js/main.a58c4b2b.js.map"
+    "main.32a63069.css.map": "/capstone/static/css/main.32a63069.css.map",
+    "main.902d36a0.js.map": "/capstone/static/js/main.902d36a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ba36627.css",
-    "static/js/main.a58c4b2b.js"
+    "static/css/main.32a63069.css",
+    "static/js/main.902d36a0.js"
   ]
 }
